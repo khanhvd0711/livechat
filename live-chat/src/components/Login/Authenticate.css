@@ -1,0 +1,25 @@
+.loginForm{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.loginWrp label{
+    display: block;
+    margin: 10px 0;
+}
+.loginWrp input{
+    width: 100%;
+
+}
+.loginWrp input[type='submit']{
+    background-color: #296eaa;
+    border: 1px solid #246195;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+}
+.loginWrp input[type='text'], .loginWrp input[type='password']{
+    padding: 5px;
+}

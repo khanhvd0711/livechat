@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
-
 class MessageBox extends Component{
 
     constructor(props){
         super(props);
         this.onChange = this.onChange.bind(this);
         this.onKeyup = this.onKeyup.bind(this);
+        // require module
         this.state = {
-            message: ''
+            message: '',
         };
     }
 
     onChange(e){
         this.setState({
-            message: e.target.value
+            message: e.target.value,
         });
     }
     onKeyup(e){
@@ -21,7 +21,7 @@ class MessageBox extends Component{
             e.preventDefault();
             let dbCon = this.props.db.database().ref('/messages');
             dbCon.push({
-                message: (e.target.value).trim()
+                message: (e.target.value).trim(),
             });
             this.setState({
                 message: ''

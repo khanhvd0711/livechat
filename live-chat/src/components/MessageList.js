@@ -33,7 +33,7 @@ class MessageList extends Component {
 
     render(){
         let messageNodes = this.state.messages.map((message, index) => {
-            console.log(message);
+            // console.log(message);
             return (
                 <div key={ index } className="card">
                     <div className="card-content">
